@@ -17,5 +17,21 @@ describe("leapYear", function(){
 
   it("is going to throw an alert if not a number", function(){
     expect(leapYear(NaN)).to.equal(true)
-  })
+  });
+
+  it("is going to throw an alert if number is negative", function(){
+    expect(leapYear(-1)).to.equal(true);
+  });
+
+  // it("is going to throw an alert if nothing is entered", function(){
+  //   expect(leapYear(" ")).to.equal(false);
+  // })
+
+});
+
+
+describe("checkEmpty", function(){
+  it("is going to throw an alert if string is empty", function(){
+    expect(checkEmpty("")).to.equal(true);
+  });
 });
